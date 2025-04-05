@@ -1,0 +1,6 @@
+print("Dato Kacitadze")
+print("Giorgi Tedozashvili")
+print("Guram Papunashvili")
+print("Jeko Kurdovanidze")
+print("Lasha Kachiuri")
+print("Luka Lortkifanidze")

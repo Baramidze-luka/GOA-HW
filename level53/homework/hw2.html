@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scss/global.css" />
+    <title>georgian kultur</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: "";
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        * {
+            opacity: 100%;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        body {
+            background: url(sky.jpg) fixed center no-repeat;
+            background-size: cover;
+        }
+
+        body main .line {
+            width: 100%;
+            height: 0.5px;
+            background: #000000;
+            margin-bottom: 50px;
+        }
+
+        body main .title-background {
+            opacity: 0.85;
+            width: 100%;
+            height: 75px;
+            margin-top: -150px;
+            background: #0b3d91;
+            position: fixed;
+        }
+
+        body main .title {
+            opacity: 100%;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        body main .section-1 {
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+
+        body main .section-1 .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        body main .section-1 .container .content {
+            background: #0b3d91;
+            border-radius: 20px;
+            height: 520px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        body main .section-1 .container .content img {
+            margin-top: -25px;
+        }
+
+        body main .section-1 .container .content .text {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        body main .section-1 .container .content .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        body main .section-1 .container .content .button button {
+            width: 45%;
+            height: 40px;
+            background: #07275d;
+            border: 2px solid #010610;
+            border-radius: 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        body main .section-1 .container .content .button button:hover {
+            background: #1959bb;
+            width: 50%;
+            height: 45px;
+        }
+
+        body main .section-2 .container-2 .box {
+            margin-top: 75px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        body main .section-2 .container-2 .box .content {
+            background: #0b3d91;
+            border-radius: 20px;
+            height: 500px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        body main .section-2 .container-2 .box .content img {
+            margin-top: -25px;
+            width: 100%;
+            height: 370px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        body main .section-2 .container-2 .box .content .text {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        body main .section-2 .container-2 .box .content .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        body main .section-2 .container-2 .box .content .button button {
+            width: 45%;
+            height: 40px;
+            background: #07275d;
+            border: 2px solid #010610;
+            border-radius: 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        body main .section-2 .container-2 .box .content .button button:hover {
+            background: #1959bb;
+            width: 50%;
+            height: 45px;
+        }
+
+        body .line {
+            margin-top: 75px;
+            width: 100%;
+            height: 0.5px;
+            background: #000000;
+        }
+
+        body footer {
+            margin-top: 75px;
+            width: 100%;
+            height: 200px;
+            background: #0b3d91;
+            opacity: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body footer h1 {
+            font-size: 20px;
+        }
+
+        body footer p {
+            margin-top: 50px;
+            font-size: 13px;
+        }
+
+        body .main-web {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 75px;
+        }
+
+        body .main-web .container-2 {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        body .main-web .container-2 img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        body .main-web .container-2 .info {
+            width: 700px;
+            height: 450px;
+            background: #0b3d91;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        body .main-web .container-2 .info h1 {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+
+        body .main-web .container-2 .info p {
+            font-size: 20px;
+        }
+
+        body .main-web .button {
+            width: 60%;
+            height: 40px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            background: #07275d;
+            border: 10610 solid 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+        }
+
+        body .main-web .button p {
+            font-size: 20px;
+        }
+
+        body .main-web .button:hover {
+            background: #1959bb;
+            width: 65%;
+            height: 45px;
+            margin-bottom: -5px;
+        }
+
+        body .video {
+            margin: 0 auto;
+            border-radius: 20px;
+            width: 700px;
+            height: 395px;
+            background: #0b3d91;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*# sourceMappingURL=global.css.map */
+    </style>
+</head>
+
+
+<body>
+
+    <main>
+        <div class="title-background">
+            <h1 class="title">საქართველოს კულტურული მემკვიდერობა</h1>
+        </div>
+
+        <section class="section-1">
+            <div class="container">
+                <div class="content">
+                    <img src="https://cdn.leonardo.ai/users/98112c3a-72bd-4ba9-b7b4-d24eab4ffd6f/generations/6846e915-188e-4112-9d40-537c7f2e29f3/Leonardo_Phoenix_10_Create_a_logo_with_a_dark_blue_background_3.jpg"
+                        alt="" width="100%">
+                    <div class="text">
+                        <h2 class="txt">უძრავი</h2>
+                    </div>
+                    <div class="button">
+                        <button><a href="#">გადასვლა</a></button>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <img src="https://images.deepai.org/art-image/8f0b50dda4d14574b0f79afebf051746/draw-a-realistic-logo-of-movable-cultural-heritage-an.jpg"
+                        alt="" width="100%">
+                    <div class="text">
+                        <h2 class="txt">მოძრავი</h2>
+                    </div>
+                    <div class="button">
+                        <button><a href="./sec.html">გადასვლა</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="section-2">
+            <div class="container-2">
+                <div class="box">
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Svetitskhoveli_Cathedral_in_Georgia%2C_Europe.jpg"
+                            alt="" width="100%">
+                        <div class="text">
+                            <h2 class="txt">სვეტიცხოვლის საკათედრო ტაძარი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web1.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://cdn.georgiantravelguide.com/storage/files/jvari-jvris-monasteri-mtskheta-jvari-monastery-mtskheta-7.jpg"
+                            alt="">
+                        <div class="text">
+                            <h2 class="txt">ჯვრის მონასტერი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web2.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Gelati_Monastery_1.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">გელათის მონასტერი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web3.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <img src="https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0041-2.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">ბაგრატის ტაძარი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web4.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://cdn.georgiantravelguide.com/storage/files/uflistsikhe-uplistsikhe-4.jpg"
+                            alt="" width="100%">
+                        <div class="text">
+                            <h2 class="txt">უფლისციხე</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web5.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://cdn.georgiantravelguide.com/storage/files/vardzia-samtskhe-javakheti-1.jpg"
+                            alt="" width="100%">
+                        <div class="text">
+                            <h2 class="txt">ვარძია</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web6.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <img src="https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0867-2.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">ანანურის ციხე-კომპლექსი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web7.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://exclusivenews.ge/wp-content/uploads/2018/01/davit-gareji.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">დავითგარეჯის სამონასტრო კომპლექსი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web8.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Shilda_%281%29.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">ნეკრესის მონასტერი</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web9.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <img src="https://cdn2.ipn.ge/media/photo/002ivlisi/shatilivillagegeorgia.jpg" alt=""
+                            width="100%">
+                        <div class="text">
+                            <h2 class="txt">შატილის კოშკები</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web10.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://zneoba.ge/wp-content/uploads/2016/02/320616_453931634673807_1042008419_n-720x320.jpg"
+                            alt="" width="100%">
+                        <div class="text">
+                            <h2 class="txt">ხერეთის ციხე</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web11.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <img src="https://i.ytimg.com/vi/O8DHbCMBys8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBe3b4bfCr5rLVhoLAI8V2Rl7xh_g"
+                            alt="" width="100%">
+                        <div class="text">
+                            <h2 class="txt">გონიოს ციხე</h2>
+                        </div>
+                        <div class="button">
+                            <button><a href="./web/web12.html">გადასვლა</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="line"></div>
+
+    <footer>
+        <h1>ნიკოლოზი დობორჯგინიძე</h1>
+        <p>გაკეთებულია სკოლისთვიის</p>
+    </footer>
+
+
+</body>
+
+</html>

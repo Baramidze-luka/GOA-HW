@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი პროფილი</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 80px;
+            font-family: sans-serif;
+        }
+
+        .profile {
+            position: relative;
+            background-color: #f0f0f0;
+            margin: 20px auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        .profile img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .name {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .static-text {
+            position: static;
+            background-color: #e0ffe0;
+            margin: 40px 20px;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        ჩემი პროფილი
+    </header>
+
+    <div class="profile">
+        <img src="profil.jpg" alt="პროფილის ფოტო">
+        <div class="name">ნიკა დობო</div>
+        <div class="description">მომავალი ვებდეველოპერი, რომელსაც უყვარს დიზაინი და პროგრამირება.</div>
+    </div>
+
+    <div class="static-text">
+        ეს არის სტატიკური აბზაცი, რომელიც ჩვეულებრივ დოკუმენტის ნაკადშია განთავსებული. ის არ აქვს პოზიციონირება და
+        იმყოფება იმ ადგილას, სადაც HTML სტრუქტურა განსაზღვრავს.
+    </div>
+
+</body>
+
+</html>

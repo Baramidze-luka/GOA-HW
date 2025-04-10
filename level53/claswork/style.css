@@ -1,0 +1,17 @@
+.d1{
+    position: absolute; /* აბსოლუტური პოზიციონირება */
+    background-color: red; 
+    width: 200px;
+    height: 200px;
+    left: 150px;   /* მარცხნიგ გადაიტანს 150პხ*/
+    top: 200px;    /* ზევიდა 200პხ */
+    z-index: 2;   /* პრიორიტეტს ანამს ანიჟებს */
+}
+.d2{
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 50px;
+}
